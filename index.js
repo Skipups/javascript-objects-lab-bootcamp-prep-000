@@ -21,3 +21,12 @@ function deleteFromObjectByKey(object, key){
   delete copyObj[key];
   return copyObj;
 }
+var newObj = Object.assign({}, object)
+
+newObj // { foo: 'bar' }
+
+delete newObj.foo // true
+
+newObj // {}
+
+obj // { foo: 'bar' }
